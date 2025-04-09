@@ -18,7 +18,7 @@ interface SquaresProps {
 const Squares: React.FC<SquaresProps> = ({
   direction = "up",
   speed = 0.3,
-  borderColor = "#999",
+  borderColor = "#FF52F9",
   squareSize = 40,
   hoverFillColor = "#FF52F9",
 }) => {
@@ -159,7 +159,7 @@ const Squares: React.FC<SquaresProps> = ({
         width: '100vw',
         height: '100vh',
         display: 'block',
-        backgroundColor: 'transparent', // Ensures the background is transparent
+        backgroundColor: 'white', // Ensures the background is transparent
       }}
     />
   );
