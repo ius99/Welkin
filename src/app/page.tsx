@@ -1,45 +1,12 @@
 "use client"
-import React, { useEffect, useState, useContext, createContext } from 'react';
+
 import Squares from '@/blocks/Backgrounds/Squares/Squares';
 import ScrollVelocity from '@/blocks/TextAnimations/ScrollVelocity/ScrollVelocity';
 import Image from 'next/image';
 
 
 function App() {
-  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
   
-
-  useEffect(() => {
-    // Check for mobile/small screen and show alert
-    if (window.innerWidth < 1024) {
-      alert("This is a very epic website so please open it using a fkn laptop and not a phone please, I didn't know how to optimize it for a phone, pls thank you");
-    }
-
-    // Initialize audio
-    const audioObj = new Audio('/aki.mp3.mp3');
-    audioObj.loop = true; // Optional: loop the song
-    setAudio(audioObj);
-
-    // Cleanup
-    return () => {
-      if (audioObj) {
-        audioObj.pause();
-        audioObj.currentTime = 0;
-      }
-    };
-  }, []);
-
-  const toggleAudio = () => {
-    if (!audio) return;
-    
-    if (isPlaying) {
-      audio.pause();
-    } else {
-      audio.play().catch(e => console.error("Audio play failed:", e));
-    }
-    setIsPlaying(!isPlaying);
-  };
 
   return (
 
