@@ -3,6 +3,8 @@
 import Squares from '@/blocks/Backgrounds/Squares/Squares';
 import ScrollVelocity from '@/blocks/TextAnimations/ScrollVelocity/ScrollVelocity';
 import Image from 'next/image';
+import { AnimatedNavbar } from '@/components/AnimatedNavbar';
+
 
 
 function App() {
@@ -29,14 +31,16 @@ function App() {
 </div>
 
 
-      <div className="fixed top-4 right-4 z-40 flex gap-48 bg-pink-200/100 backdrop-blur-lg p-3 rounded-xl shadow-lg">
-  <button className="text-pink-400 text-2xl hover:text-white transition">Project</button>
-  <button className="text-pink-400 text-2xl hover:text-white transition">About</button>
-  <button className="text-pink-400 text-2xl hover:text-white transition">Theme</button>
+
+
+<div className="p-4 border border-red-500">
+  <Image
+    src="/shivanshphoto1.svg"
+    alt="shivansh"
+    width={120}
+    height={100}
+  />
 </div>
-
-
-
 
 
       {/* Centered Content */}
@@ -56,9 +60,25 @@ function App() {
 
       </div>
 
-      {/* Footer with XL 2025 */}
+   
+      <div className='fixed top-4 right-2'>
+      <AnimatedNavbar />
+      </div>
+     
      
     </div>
+
+  
+
+
+
+
+
+
+
+
+
+
   );
 }
 
