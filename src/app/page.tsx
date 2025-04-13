@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { AnimatedNavbar } from "@/components/AnimatedNavbar";
 import toast from 'react-hot-toast';
+import ScrollVelocity from "@/blocks/TextAnimations/ScrollVelocity/ScrollVelocity";
 
 function App() {
 
@@ -60,6 +61,21 @@ function App() {
           priority
         />
       </div>
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-20 pointer-events-none w-full">
+        <div className="text-pink-400 text-center backdrop-blur-[1px] px-4 py-2 rounded-lg w-full mb-24">
+          <ScrollVelocity 
+            texts={[
+              "For a new moon is set to rise.",
+              "新しい月が昇ろうとしている。",
+              "क्योंकि एक नया चाँद उदय होने वाला है।",
+              "لأن قمراً جديداً على وشك أن يبزغ"
+            ]}
+          />
+        </div>
+      </div>
+
+
 
     
     </div>
