@@ -13,7 +13,7 @@ interface AnimatedNavbarProps {
   tabs?: string[]; // Optional custom tabs
 }
 
-export function AnimatedNavbar({ tabs = ['home', 'pricing', 'features', 'docs', 'blogs'] }: AnimatedNavbarProps) {
+export function AnimatedNavbar({ tabs = ['Home', 'Projects','About me', 'Music', 'Theme'] }: AnimatedNavbarProps) {
   const [position, setPosition] = useState<Position>({
     left: 0,
     width: 0,
@@ -32,7 +32,7 @@ export function AnimatedNavbar({ tabs = ['home', 'pricing', 'features', 'docs', 
   );
 }
 
-function Tab({ children, position, setPosition }: {
+function Tab({ children, position,  setPosition }: {
   children: ReactNode;
   position: Position;
   setPosition: React.Dispatch<React.SetStateAction<Position>>;
