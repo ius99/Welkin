@@ -16,11 +16,10 @@ function App() {
     if (isMobile) {
       toast.custom(
         <div className="max-w-md bg-pink-500 text-white text-xl text-center border border-white rounded-2xl p-4 shadow-lg whitespace-normal break-words">
-           This website is too amazing for your tiny phone screen.  
+           This website is not optimized for smaller screens YET.  
           <br />
            Please open it on a LAPTOP.  
           <br />
-          U broke ass 
         </div>
       );
     }
