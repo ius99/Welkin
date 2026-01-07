@@ -13,33 +13,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative overflow-hidden">
-
+      <body className="relative">
         {/* DESKTOP CONTENT */}
-        <div className="hidden md:block">
+        <div className="hidden sm:block">
           {children}
         </div>
 
         {/* MOBILE BLOCKER */}
-        <div className="fixed inset-0 z-[9999] md:hidden bg-black flex items-center justify-center text-white">
-          
+        <div className="fixed inset-0 z-[9999] sm:hidden bg-black text-white overflow-hidden">
           {/* GLOBE (behind) */}
           <div className="absolute inset-0 opacity-30 pointer-events-none">
             {children}
           </div>
 
           {/* MESSAGE */}
-          <div className="relative z-10 text-center px-6">
-            <h1 className="text-3xl font-light tracking-widest">
-              This website is not optimized
-            </h1>
-            <p className="mt-4 text-lg opacity-70 tracking-wide">
-              for small screens and never will be.
-            </p>
+          <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
+            <div>
+              <h1 className="text-3xl font-light tracking-widest">
+                This website is not optimized
+              </h1>
+              <p className="mt-4 text-lg opacity-70 tracking-wide">
+                for small screens and never will be.
+              </p>
+            </div>
           </div>
-
         </div>
-
       </body>
     </html>
   );
