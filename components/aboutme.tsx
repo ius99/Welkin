@@ -6,7 +6,7 @@ export default function AboutMe() {
         <section className="w-full h-screen bg-white py-32 relative text-black ">
             <div className="grid grid-cols-24">
                 <div className="col-start-2 col-end-7 h-full flex flex-col gap-2 justify-center items-start">
-                    <span className="uppercase text-xl bg-[#39FF14] px-2">About</span>
+                    <span className="uppercase text-xl bg-black text-white px-2">About</span>
                     <div className="text-6xl mt-12 font-light leading-tight text-black">
                         <span className="petit-formal">Shivansh</span>
                         <h1 className="petit-formal">Yadav</h1>
@@ -23,7 +23,7 @@ export default function AboutMe() {
                 </div>
                 <div className="col-start-7 col-end-11 h-full">
                     <div className="flex flex-col gap-14">
-                        <span className="uppercase text-xl bg-[#39FF14] w-fit px-2">bio</span>
+                        <span className="uppercase text-xl bg-black text-white w-fit px-2">bio</span>
                         <p className="text-gray-700 text-md">
                             Born in Gurugram, India, I am a multidisciplinary designer and developer with a strong interest in technology and creativity.
                             <br /><br />
@@ -35,7 +35,7 @@ export default function AboutMe() {
                     </div>
                 </div>
                 <div className="col-start-12 col-end-17 h-full">
-                    <span className="text-xl uppercase bg-[#39FF14] px-2">CAREER</span>
+                    <span className="text-xl uppercase bg-black text-white px-2">CAREER</span>
 
                     <div className="flex flex-col gap-2 mt-10">
                         <div className="flex flex-col text-md text-gray-700">
@@ -60,7 +60,7 @@ export default function AboutMe() {
                 </div>
 
                 <div className="col-start-18 col-end-22 h-full">
-                    <span className="uppercase text-xl bg-[#39FF14] px-2">Education</span>
+                    <span className="uppercase text-xl bg-black text-white px-2">Education</span>
                     <div className="flex flex-col gap-10 mt-20">
                         <div>
                             <span>2011-2022</span>
@@ -77,7 +77,7 @@ export default function AboutMe() {
             {/* Fixed Marquee Section */}
             <div className="absolute bottom-0 h-[100px] w-full overflow-hidden bg-white  flex items-center ">
                 <div className="absolute bottom-0 h-[100px] w-full overflow-hidden bg-white text-xl flex items-center">
-                    <div className="flex animate-marquee whitespace-nowrap bg-[#39FF14]">
+                    <div className="flex animate-marquee whitespace-nowrap bg-black text-white">
                         {/* First set of programming topics */}
                         <div className="flex items-center gap-16 min-w-max text-xl">
                             <h1 className="text-2xl font-medium">C++</h1>

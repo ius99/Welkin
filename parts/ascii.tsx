@@ -11,7 +11,7 @@ export default function TextGifCanvas() {
     const ctx = canvas.getContext("2d")!;
 
     // Circular ASCII characters
-    const asciiChars = ["Y", "◉", "○", "S", "·"];
+    const asciiChars = ["█", "▓", "▒", "░", "·", " "];
     const scale = 10;
     const frameDelay = 160;
   
