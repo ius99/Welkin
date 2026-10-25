@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { asset } from "@/lib/asset";
 import { parseGIF, decompressFrames } from "gifuct-js";
 
 export default function TextGifCanvas() {
@@ -25,7 +26,7 @@ export default function TextGifCanvas() {
     let animationId: number | null = null;
     let lastTimestamp = 0;
 
-    fetch("/earth_big.gif")
+    fetch(asset("/earth_big.gif"))
       .then(res => {
         if (!res.ok) {
           throw new Error(`Failed to load GIF: ${res.statusText}`);

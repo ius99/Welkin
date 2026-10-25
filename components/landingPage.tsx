@@ -1,6 +1,7 @@
 "use client"
 import Clock from "@/parts/clock";
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import TextGifCanvas from "@/parts/ascii";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
@@ -48,7 +49,7 @@ export default function LandingPage() {
         <span className="text-[#eeff00ff]">&#123;</span>
         <div ref={ref}>
           <Image
-            src="/SHIVANSH.svg"
+            src={asset("/SHIVANSH.svg")}
             alt="Profile Picture"
             width={120}  // Adjust size as needed
             height={120}

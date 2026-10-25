@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Work from "@/parts/work";
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 type CursorType = {
   top: number;
@@ -134,7 +135,7 @@ function ProjectPreview({
     >
       {activeProject && (
         <Image
-          src={activeProject.image}
+          src={asset(activeProject.image)}
           alt="Project preview"
           fill
           className="object-cover"
