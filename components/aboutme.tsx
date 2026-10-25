@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import TextGifCanvas from "@/parts/ascii";
 
 export default function AboutMe() {
@@ -12,7 +13,7 @@ export default function AboutMe() {
                         <h1 className="petit-formal">Yadav</h1>
                         <div>
                             <Image
-                                src="/Sshivansh.jpg"
+                                src={asset("/Sshivansh.jpg")}
                                 alt="Profile Picture"
                                 width={320}
                                 height={320}
